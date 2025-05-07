@@ -46,10 +46,14 @@ const Home = () => {
               ingredients that nourish and protect your skin.
             </p>
             <div className="flex space-x-4">
+              <Link to="/Products">
               <Button size="lg">Shop Now</Button>
+              </Link>
+              <Link to="/AaoutUs">
               <Button variant="outline" size="lg">
                 Learn More
               </Button>
+            </Link>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
