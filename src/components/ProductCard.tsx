@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import { Link } from 'react-router-dom';
 export interface ProductProps {
   id: number;
   name: string;
@@ -17,7 +17,8 @@ const ProductCard = ({
   product,
   featured = false
 }: ProductCardProps) => {
-  return <div className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow ${featured ? 'border border-[#9ac1a0]/30' : ''}`}>
+  return (
+    <div className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow ${featured ? 'border border-[#9ac1a0]/30' : ''}`}>
       <div className="aspect-square overflow-hidden bg-[#f9f9f9]">
         <img src={product.image} alt={product.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
       </div>
@@ -30,15 +31,23 @@ const ProductCard = ({
           <span className="font-medium text-[#c19a6b]">
             RSD {product.price.toFixed(2)}
           </span>
-          {featured && <span className="bg-[#f3f8f4] text-[#9ac1a0] text-xs px-2 py-1 rounded-full">
+          {featured && (
+            <span className="bg-[#f3f8f4] text-[#9ac1a0] text-xs px-2 py-1 rounded-full">
               Featured
-            </span>}
+            </span>
+          )}
         </div>
-        {product.description && <p className="text-gray-600 text-sm mb-4">{product.description}</p>}
-        <Button variant="outline" size="sm" fullWidth>
-          Add to Cart
-        </Button>
+        {product.description && (
+          <p className="text-gray-600 text-sm mb-4">{product.description}</p>
+        )}
+        <Link
+          to="/contact"
+          className="inline-flex items-center justify-center rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9ac1a0] bg-transparent text-[#c19a6b] border border-[#c19a6b] hover:bg-[#f9f5f0] px-3 py-1.5 text-sm w-full text-center"
+        >
+          Contact to Order
+        </Link>
       </div>
-    </div>;
+    </div>
+  );
 };
 export default ProductCard;
