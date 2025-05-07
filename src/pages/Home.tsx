@@ -53,7 +53,7 @@ const Home = () => {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <img src="/3.jpg" alt="Diva Kozmetika Natural Serum" className="rounded-lg shadow-lg max-w-sm w-full object-cover" />
+            <img src="/hidratantna-krema.jpg" alt="Diva Kozmetika Natural Serum" className="rounded-lg shadow-lg max-w-sm w-full object-cover" />
           </div>
         </div>
       </section>
