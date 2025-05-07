@@ -29,8 +29,14 @@ const Button = ({
     lg: 'px-6 py-3 text-lg'
   };
   const widthClass = fullWidth ? 'w-full' : '';
-  return <button type={type} className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${widthClass} ${className}`} onClick={onClick}>
+  return (
+    <button
+      type={type}
+      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${widthClass} ${className}`}
+      onClick={onClick}
+    >
       {children}
-    </button>;
+    </button>
+  );
 };
 export default Button;
