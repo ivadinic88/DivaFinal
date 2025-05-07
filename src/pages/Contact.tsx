@@ -81,7 +81,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium text-gray-800 mb-1">Email</h3>
                   <p className="text-gray-600">
-                    info@divakozmetika.com
+                    diva.kozmetika.srbija@gmail.com
                     <br />
                     support@divakozmetika.com
                   </p>
