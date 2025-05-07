@@ -16,7 +16,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail', // service ID
+        'service_scnffjk', // service ID
         'template_02drx1g', // template ID
         form.current!,
         'JdM3oTsxjv4HQWM6q' // public key
