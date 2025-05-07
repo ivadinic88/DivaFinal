@@ -31,7 +31,7 @@ const featuredProducts = [{
 const Home = () => {
   return <div className="w-full">
       {/* Hero Section */}
-      <section className="relative bg-[#f3f8f4] py-20 md:py-28">
+      <section className="relative bg-[#f3f8f4] py-10 md:py-16">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <span className="text-[#9ac1a0] font-medium">
@@ -49,7 +49,7 @@ const Home = () => {
               <Link to="/Products">
               <Button size="lg">Shop Now</Button>
               </Link>
-              <Link to="/AaoutUs">
+              <Link to="/AboutUs">
               <Button variant="outline" size="lg">
                 Learn More
               </Button>
