@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link to="/" className="inline-block mb-4">
-              <img src="/Logo-modified.jpg" alt="Diva Kozmetika Logo" className="h-16" />
+              <img src="/Logo-modified.jpg" alt="logo" className="h-16" />
             </Link>
             <p className="text-gray-600 mb-4">
               Natural beauty products made with care for your skin and the
