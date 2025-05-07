@@ -14,15 +14,11 @@ const Footer = () => {
               environment.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-[#c19a6b]">
+              <a href="https://www.instagram.com/diva.kozmetika_srbija/" target="_blank"
+                     rel="noopener noreferrer" className="text-gray-500 hover:text-[#c19a6b]">
                 <InstagramIcon size={20} />
               </a>
-              <a href="#" className="text-gray-500 hover:text-[#c19a6b]">
-                <FacebookIcon size={20} />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-[#c19a6b]">
-                <TwitterIcon size={20} />
-              </a>
+        
             </div>
           </div>
           <div>
